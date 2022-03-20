@@ -1,0 +1,73 @@
+/* Standard for all elements */
+*
+{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+*::after,*::before
+{
+    content: "";
+    display: block;
+}
+
+/* Standard for body & html elements*/
+html,body
+{
+    width: 100%;
+    
+}
+
+body
+{
+    height: auto;
+}
+/* Standard for ul element*/
+ul
+{
+    list-style: none;
+    list-style-position: inside;
+}
+
+/* Standard for a elament */
+a
+{
+    text-decoration: none;
+}
+
+/* Standard for input element */
+input
+{
+    outline: none;
+}
+
+/* main part style */
+main
+{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    
+}
+
+/* header style */
+.fixed-bar
+{
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top: 0px;
+    margin: auto;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%);
+}
+
+header
+{
+    width: 80% !important;
+}
+
+

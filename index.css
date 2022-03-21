@@ -10,7 +10,7 @@
 *::after,*::before
 {
     content: "";
-    display: block;
+    display: inline-block;
 }
 
 /* Standard for body & html elements*/
@@ -35,6 +35,7 @@ ul
 a
 {
     text-decoration: none;
+    color:inherit;
 }
 
 /* Standard for input element */
@@ -46,13 +47,13 @@ input
 /* main part style */
 main
 {
-    width: 80%;
+    width: 100%;
     height: 100%;
     margin: auto;
     
 }
 
-/* header style */
+/* header part style */
 .fixed-bar
 {
     width: 100%;
@@ -67,7 +68,218 @@ main
 
 header
 {
-    width: 80% !important;
+    height: 80px !important;
+    background: black;
+}
+
+header::before
+{
+    content: "</>";
+    display: block;
+    width: 230px;
+    height: 100%;
+    background-color: #ffc107;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: bold;
+    color: red;
+}
+
+header::after
+{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0px;
+    left: 229px;
+    border: 40px #ffc107 solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+nav
+{
+    display: inline-block;
+    position: absolute;
+    top:0px;
+    left: 330px;
+    color: white;
+}
+
+ul li
+{
+    margin-right: 140px;
+    font-family: monospace;
+    width: 160px;
+    height: 80px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b68e21c;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+ul li:hover
+{
+    background-color: transparent;
+    color: orange;
+}
+
+/* section Me part style */
+#welcome-section
+{
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(19,19,91,1) 39%, rgba(2,0,36,1) 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section h1
+{
+    font-size: 11vw;
+    color: white;
+}
+
+#welcome-section p
+{
+    font-size: 6vw;
+    color: orange;
+}
+
+#welcome-section p::after
+{
+    animation-name: write-name;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    width: 637px;
+    left: 50%;
+    font-size: 4vw;
+    color: orangered;
+    position: absolute;
+    top: 50%;
+    transform: translate(8%,-34%);
 }
 
 
+
+#welcome-section span
+{
+    font-size: 20px;
+    color: orange;
+}
+
+
+/* Key frames */
+@keyframes write-name {
+    0%
+    {
+        content:"|";
+    }
+    4%
+    {
+        content: "A|";
+    }
+    8%
+    {
+        content: "Ah|"
+    }
+    12%
+    {
+        content: "Ahm|";
+    }
+    16%
+    {
+        content: "Ahme|";
+    }
+    20%
+    {
+        content: "Ahmed|";
+    }
+    24%
+    {
+        content: "Ahmed |"
+    }
+    28%
+    {
+        content: "Ahmed E|"
+    }
+    32%
+    {
+        content: "Ahmed EL|";
+    }
+    36%
+    {
+        content: "Ahmed EL-|"
+    }
+    40%
+    {
+        content: "Ahmed EL-3|"
+    }
+    44%
+    {
+        content: "Ahmed EL-3a|"
+    }
+    48%
+    {
+        content: "Ahmed EL-3ad|"
+    }
+    52%
+    {
+        content: "Ahmed EL-3adl|";
+    }
+    56%
+    {
+        content: "Ahmed EL-3ad|"
+    }
+    60%
+    {
+        content: "Ahmed EL-3a|"
+    }
+    64%
+    {
+        content: "Ahmed EL-3|"
+    }
+    68%
+    {
+        content: "Ahmed EL-|"
+    }
+    72%
+    {
+        content: "Ahmed EL|";
+    }
+    76%
+    {
+        content: "Ahmed E|"
+    }
+    80%
+    {
+        content: "Ahmed |"
+    }
+    84%
+    {
+        content: "Ahmed|";
+    }
+    88%
+    {
+        content: "Ahme|";
+    }
+    92%
+    {
+        content: "Ahm|";
+    }
+    96%
+    {
+        content: "Ah|"
+    }
+    100%
+    {
+        content: "A|";
+    }
+}

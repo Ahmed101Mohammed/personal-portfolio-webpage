@@ -70,6 +70,7 @@ header
 {
     height: 80px !important;
     background: black;
+    z-index: 1;
 }
 
 header::before
@@ -175,7 +176,125 @@ ul li:hover
     color: orange;
 }
 
+/* section skills part style */
+#skills
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(33,9,175,0.9976365546218487) 22%, rgba(56,0,112,1) 86%);
+}
 
+#skills i
+{
+    font-size: 74px;
+}
+
+#skills .container
+{
+    display: grid;
+    width: 50%;
+    grid-template-columns: 100%;
+    padding: 10px;
+}
+
+#skills .tech-links
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 10px;
+    height: 81%;
+    align-items: center;
+    color: #ff10e82e;
+}
+
+
+
+#skills .skills div
+{
+    margin-bottom: 25px;
+}
+
+.html::after,.css::after,.js::after,.bootstrap::after,.scss::after,.react::after
+{
+    width: 80%;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 125px;
+    background: linear-gradient(135deg, #ff5722 35%, rgb(255 255 255) 35%);
+    content: "35%";
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.html
+{
+    color: orangered;
+}
+
+
+
+.css
+{
+    color: #006cb4;
+}
+
+.js
+{
+    color: #efd81d;
+}
+.js::after
+{
+    background: linear-gradient(135deg, #ff5722 20%, rgb(255 255 255) 20%);
+    content: "20%";
+}
+
+.bootstrap
+{
+    color: #8511f0;
+}
+
+.bootstrap::after,.scss::after,.react::after
+{
+    background: linear-gradient(135deg, #ff5722 10%, rgb(255 255 255) 10%);
+    content: "10%";
+}
+
+.scss
+{
+    color: #eff2f2;
+}
+
+.react
+{
+    color: #46caf2;
+}
+
+.fa-github:hover
+{
+ color: #000;
+}
+
+.fa-linkedin:hover
+{
+    color: #0961b8;
+}
+
+.fa-stack-overflow:hover
+{
+    color: rgb(242 141 13);
+}
 /* Key frames */
 @keyframes write-name {
     0%

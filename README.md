@@ -15,6 +15,11 @@ This project contains:
     > - Small text with my Job (front-end developer).
 
 3. (Skills) section.
+    > Skills section has.
+    > - Personal skills.
+    > - Level of skills.
+    > - Tech links thats contain links of GitHub, LinkedIn, and Stackoverflow. 
+    >   that appear in all the wep bage in the right side.
 4. (Projects) section.
 5. footer.
 

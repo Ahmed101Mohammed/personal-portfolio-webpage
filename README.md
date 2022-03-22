@@ -21,6 +21,8 @@ This project contains:
     > - Tech links thats contain links of GitHub, LinkedIn, and Stackoverflow. 
     >   that appear in all the wep bage in the right side.
 4. (Projects) section.
+    > Projects section has.
+    > - Fake projects.
 5. footer.
 
 > :Warning: The project is still building.

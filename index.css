@@ -1,4 +1,8 @@
 /* Standard for all elements */
+:root
+{
+    scroll-behavior: smooth;
+}
 *
 {
     margin: 0px;
@@ -11,6 +15,7 @@
 {
     content: "";
     display: inline-block;
+
 }
 
 /* Standard for body & html elements*/
@@ -127,9 +132,12 @@ ul li
 ul li:hover
 {
     background-color: transparent;
+    
+}
+ul li a:hover
+{
     color: orange;
 }
-
 /* section Me part style */
 #welcome-section
 {
@@ -140,6 +148,12 @@ ul li:hover
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#welcome-section .container
+{
+    position: relative;
+    left: -218px;
 }
 
 #welcome-section h1
@@ -157,8 +171,9 @@ ul li:hover
 #welcome-section p::after
 {
     animation-name: write-name;
-    animation-duration: 20s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.94, -0.4, 0, 1.59);
     width: 637px;
     left: 50%;
     font-size: 4vw;
@@ -301,22 +316,61 @@ ul li:hover
 {
     width: 100%;
     height: 100vh;
-    padding: 88px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 #projects .container
 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(24%,1fr));
+    width: 55%;
+    gap: 45px;
+    position: relative;
+    top: 28px;
+}
+
+#projects .container .co
+{
     width: 100%;
 }
-#projects img
+
+#projects .container::before, #projects .container::after 
 {
-    width: 300px;
-    height: 400px;
+    position: absolute;
+}
+#projects .container .co img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border: 3px orangered solid;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+}
+
+
+img + p
+{
+    color: orange;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding: 6px;
+    background: #423838;
+    
+}
+
+#projects .container .co:hover
+{
+    animation-name: touch;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+    cursor: pointer;
 }
 /* Key frames */
 @keyframes write-name {
@@ -423,5 +477,13 @@ ul li:hover
     100%
     {
         content: "A|";
+    }
+}
+
+@keyframes touch 
+{
+    100%
+    {
+        transform: scale(1.2);
     }
 }

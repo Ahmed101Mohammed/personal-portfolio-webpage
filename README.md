@@ -23,6 +23,7 @@ This project contains:
 4. (Projects) section.
     > Projects section has.
     > - Fake projects.
+    > - Paragraphs and images to dicribe the project.
 5. footer.
 
 > :Warning: The project is still building.

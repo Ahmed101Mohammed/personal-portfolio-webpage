@@ -40,9 +40,9 @@
         <!-- The Skills section: It's contain the skills that I have and may level in each one -->
         <section id = "skills">
             <section class="tech-links">
-                <a href=""><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                <a href=""><i class="fa-brands fa-stack-overflow"></i></a>
+                <a id = "profile-link" target="_blank" href="https://github.com/Ahmed101Mohammed"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ahmed-mohamed-77a2a2216/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://stackoverflow.com/users/15945639/%d9%90ahmed-mohamed"><i class="fa-brands fa-stack-overflow"></i></a>
             </section>
             <div class="container">
                 
@@ -84,30 +84,33 @@
         <!-- The Projects section: It's contain My projects -->
         <section id = "projects">
             <div class="container">
-                <div class="co tribute">
+                <a href="https://mystifying-beaver-fefc98.netlify.app/" >
+                <div class="project-tile tribute">
+
                     <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="tribute page">
                     <p>Tribute page</p>
                 </div>
-                <div class="co random">
+                </a>
+                <div class="project-tile random">
                     <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" alt="random quote machine">
                     <p>Random quote machine</p>
                 </div>
-                <div class="co calc">
+                <div class="project-tile calc">
                     <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="javascript calcuter">
                     <p>Javascript calcuter</p>
                 </div>
 
-                <div class="co map">
+                <div class="project-tile map">
                     <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="map">
                     <p>Map</p>
                 </div>
                 
-                <div class="co wiki">
+                <div class="project-tile wiki">
                     <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="wiki search tool" >
                     <p>Wiki search tool</p>
                 </div>
                 
-                <div class="co tic">
+                <div class="project-tile tic">
                     <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="tic tac toe page">
                     <p>Tic tac toe page</p>
                 </div>
@@ -116,7 +119,28 @@
         </section>
         <!-- the footer of the page -->
         <footer id="send">
-            
+            <form action="">
+                <label for="email">
+                    Email: 
+                </label>
+                <input type="text" id="email" name="user-email" placeholder="Enter your email">
+
+                <label for="sub">
+                    Subject: 
+                </label>
+                <input type="text" placeholder="The subject of your email is " id ="sub" name="user-subject">
+                
+                <label for="content">
+                    Your massage
+                </label>
+
+                <textarea name="content" id="content" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+            <hr>
+            <p>	&#169; By : Ahmed El-3adl 2022</p>
+            <span> My social: <a href="https://github.com/Ahmed101Mohammed">GitHub</a> | <a href="https://www.linkedin.com/in/ahmed-mohamed-77a2a2216/">Linkedin</a> | <a href="https://stackoverflow.com/users/15945639/%d9%90ahmed-mohamed">Stack overflow</a></span>
         </footer>
     </main>
 </body>

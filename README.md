@@ -23,7 +23,10 @@ This project contains:
 4. (Projects) section.
     > Projects section has.
     > - Fake projects.
-    > - Paragraphs and images to dicribe the project.
+    > - Paragraphs and images to discripe the project.
 5. footer.
+    > Footer part has.
+    > - Email form to send a message to me.
+    > - CopyRight sign with the date of design.
 
-> :Warning: The project is still building.
+> :Warning: The project is not responsive.
